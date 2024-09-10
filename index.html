@@ -12,62 +12,62 @@
 </head>
 <body>
     
-    <h1>Formulário</h1>
+    <h2>Formulário</h2>
     <br>
+    
     <form action="index.html" method="get">
-        <main class="container" id="box-md">
+        <main  class="container" id="box-md">
             
             
-            <div class="col-left">
-                <p class="data">Dados Pessoais:</p>
-                
-                <input type="text" class="form-control my_custom_left" id="nome" placeholder="Nome Completo" required autofocus>
-    
-                <input type="email" class="form-control my_custom_left" id="email" placeholder="Email" required>
-    
-                <input type="tel" class="form-control my_custom_left" id="num" placeholder="Telefone" required pattern="\d+">
-    
-                <select id="assunto" class="form-select my_custom_left" name="assunto">
-                    <option value="assunto">Escolha um assunto:</option>
-                    <option value="visita">Visita</option>
-                    <option value="marcação">Marcação</option>
-                    <option value="consultoria">Consultoria</option>
-                </select>
-    
-            </div>
-    
-            
-            <div class="col-right">
-                
-                
-                <label for="msg" class="form-label mt-1 msg" id="lbl">Mensagem: </label>
-                <textarea name="msg" id="msg" class="form-control my_custom_txt" rows="7"></textarea>
-                
-                <br>
-                <br>
-                <p>Preferência de contacto: </p>
-                <label for="email" class="form-check-label">Email:</label>
-                <input type="radio" name="preference" class="form-check-input custom_op" id="email" value="email">
-    
-                <label for="num" class="form-check-label">Telefone:</label>
-                <input type="radio" name="preference" class="form-check-input custom_op" id="num" value="num">
-    
-                <label for="both" class="form-check-label">Ambos:</label>
-                <input type="radio" name="preference" class="form-check-input custom_op" id="both" value="both">
-    
-                <br>
-                <br>
-    
-                <label for="terms" class="form-check-label">Eu li e aceito os termos e condições: </label>
-                <input type="checkbox" name="terms" class="form-check-input terms" value="terms" required>
-                
-                <div class="btn">
-                    <button type="submit" class="btn btn-success btn-lg w-50 my_custom_btn">Enviar</button>
+                <div class="col-left">
+                    <p class="data">Dados Pessoais:</p>
+                    
+                    <label for="nome" class="lbl">Nome Completo:</label>
+                    <input type="text" class="form-control my_custom_left" id="nome" placeholder="Digite seu nome" required autofocus>
+                    <label for="email" class="lbl">Email:</label>
+                    <input type="email" class="form-control my_custom_left" id="email" placeholder="Email" required>
+                    <label for="num" class="lbl">Telefone:</label>
+                    <input type="tel" class="form-control my_custom_left" id="num" placeholder="Telefone" required pattern="\d+">
+                    <label for="assunto" class="lbl">Assunto:</label>
+                    <select id="assunto" class="form-select my_custom_left" name="assunto">
+                        <option value="assunto">Escolha um assunto:</option>
+                        <option value="visita">Visita</option>
+                        <option value="marcação">Marcação</option>
+                        <option value="consultoria">Consultoria</option>
+                    </select>
+
                 </div>
-            </div>
-        </main>  
+
+                
+                <div class="col-right">
+                    
+                    
+                    <label for="msg" class="form-label mt-1 msg" id="lbl">Mensagem: </label>
+                    <textarea name="msg" id="msg" class="form-control my_custom_txt" rows="7"></textarea>
+                    
+                    <br>
+                    <br>
+                    <p>Preferência de contacto: </p>
+                    <label for="email" class="form-check-label">Email:</label>
+                    <input type="radio" name="preference" class="form-check-input custom_op" id="email" value="email">
+
+                    <label for="num" class="form-check-label">Telefone:</label>
+                    <input type="radio" name="preference" class="form-check-input custom_op" id="num" value="num">
+
+                    <label for="both" class="form-check-label">Ambos:</label>
+                    <input type="radio" name="preference" class="form-check-input custom_op" id="both" value="both">
+
+                    <br>
+                    <br>
+
+                    <label for="terms" class="form-check-label">Eu li e aceito os termos e condições: </label>
+                    <input type="checkbox" name="terms" class="form-check-input terms" value="terms" required>
+                    
+                    <div class="btn">
+                        <button type="submit" class="btn btn-success btn-lg w-50 my_custom_btn">Enviar</button>
+                    </div>
+                </div>
+        </main>    
     </form>
-    
-    
 </body>
 </html>
